@@ -6,11 +6,10 @@ You can configure with your own questions, categories, and media (images, videos
 
 ## Features
 
-- Fully customizable board size (columns and rows)
+- Fully customizable board size (set column and row number)
 - Support for multiple question types: text, image, video, and audio
 - Customizable theme colors
 - Responsive design for different screen sizes
-- Clean, authentic Jeopardy-style interface
 - Easy JSON-based configuration
 
 ## Quick Start
