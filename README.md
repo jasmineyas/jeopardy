@@ -51,13 +51,17 @@ The game is configured through a `config.json` file. Here's what you can customi
 "theme": {
   "primaryColor": "#060CE9",
   "textColor": "#FFFFFF",
-  "backgroundColor": "#000000"
+  "backgroundColor": "#000000",
+  "answerBoxColor": "#21ff76",
+  "answerAccentColor": "#ffffff"
 }
 ```
 
 - `primaryColor`: The main color for the board (default is Jeopardy blue)
 - `textColor`: Text color for questions and UI
 - `backgroundColor`: Background color of the page
+- `answerBoxColor`: Background color of the answer container
+- `answerAccentColor`: Color for answer borders, labels, and accent elements
 
 ### Board Structure
 
@@ -147,6 +151,55 @@ Each category contains a name and an array of questions:
 }
 ```
 
+### Optional Fields
+
+**Hint Image:**
+
+Add an optional `hint` field to any question type to provide a hint image that players can reveal:
+
+```json
+{
+  "value": 400,
+  "type": "image",
+  "question": "Name this famous movie character.",
+  "media": "media/movie_character.jpg",
+  "hint": "media/movie_character_hint.jpg",
+  "answer": "Who is Darth Vader?"
+}
+```
+
+**Answer Image:**
+
+Add an optional `answerImage` field to display an image along with the text answer:
+
+```json
+{
+  "value": 200,
+  "type": "text",
+  "question": "This ancient wonder of the world is the only one still standing today.",
+  "answer": "What is the Great Pyramid of Giza?",
+  "answerImage": "media/great_pyramid_answer.jpg"
+}
+```
+
+**Combined Example:**
+
+You can use both hint and answer images together:
+
+```json
+{
+  "value": 400,
+  "type": "image",
+  "question": "Name this famous movie character.",
+  "media": "media/movie_character.jpg",
+  "hint": "media/movie_character_hint.jpg",
+  "answer": "Who is Darth Vader?",
+  "answerImage": "media/movie_character_answer.jpg"
+}
+```
+
+When hint or answer images are present, the modal will automatically scroll to show them, making it easy to view all content even with multiple images.
+
 ## Adding Media Files
 
 1. Create a `media` folder in the project root (if it doesn't exist)
@@ -178,9 +231,12 @@ jeopardy/
 
 1. Click on any dollar amount to reveal the question
 2. Read/view the question and media (if any)
-3. Click "Show Answer" to reveal the answer
-4. Click "Close" to return to the board
-5. Used questions will be grayed out and cannot be clicked again
+3. (Optional) Click "Show Hint" to reveal a hint image if available
+4. Click "Show Answer" to reveal the answer
+5. Click "Close" to return to the board
+6. Used questions will be grayed out and cannot be clicked again
+
+**Note:** Questions are only marked as answered if you click "Show Answer". If you close the modal without viewing the answer, you can come back to that question later.
 
 ## Tips
 
