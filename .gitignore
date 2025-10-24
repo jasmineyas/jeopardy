@@ -1,0 +1,22 @@
+# User's custom media files
+media/*
+!media/examples/
+
+# User's custom config
+config.json
+!config.example.json
+
+# Build output
+dist/
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+.claude/
+*.swp
+*.swo

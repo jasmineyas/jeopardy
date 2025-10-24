@@ -1,0 +1,199 @@
+{
+  "title": "Jeopardy!",
+  "theme": {
+    "primaryColor": "#f2f9fc",
+    "textColor": "#0a73ab",
+    "backgroundColor": "#7cc8e6",
+    "answerBoxColor": "#abf7c8",
+    "answerAccentColor": "#f7c334"
+  },
+  "board": {
+    "columns": 5,
+    "rows": 5
+  },
+  "categories": [
+    {
+      "name": "History",
+      "questions": [
+        {
+          "value": 200,
+          "type": "text",
+          "question": "This ancient wonder of the world is the only one still standing today.",
+          "answer": "What is the Great Pyramid of Giza?",
+          "answerImage": "media/examples/great_pyramid_answer.jpg"
+        },
+        {
+          "value": 400,
+          "type": "text",
+          "question": "This U.S. president delivered the Gettysburg Address in 1863.",
+          "answer": "Who is Abraham Lincoln?"
+        },
+        {
+          "value": 600,
+          "type": "text",
+          "question": "The French Revolution began in this year.",
+          "answer": "What is 1789?"
+        },
+        {
+          "value": 800,
+          "type": "text",
+          "question": "This empire was ruled by Julius Caesar.",
+          "answer": "What is the Roman Empire?"
+        },
+        {
+          "value": 1000,
+          "type": "text",
+          "question": "This treaty ended World War I in 1919.",
+          "answer": "What is the Treaty of Versailles?"
+        }
+      ]
+    },
+    {
+      "name": "Science",
+      "questions": [
+        {
+          "value": 200,
+          "type": "text",
+          "question": "This is the chemical symbol for water.",
+          "answer": "What is H2O?"
+        },
+        {
+          "value": 400,
+          "type": "text",
+          "question": "This planet is known as the Red Planet.",
+          "answer": "What is Mars?"
+        },
+        {
+          "value": 600,
+          "type": "text",
+          "question": "This scientist developed the theory of relativity.",
+          "answer": "Who is Albert Einstein?"
+        },
+        {
+          "value": 800,
+          "type": "text",
+          "question": "This is the powerhouse of the cell.",
+          "answer": "What is mitochondria?"
+        },
+        {
+          "value": 1000,
+          "type": "text",
+          "question": "This is the speed of light in meters per second.",
+          "answer": "What is 299,792,458 m/s?"
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "questions": [
+        {
+          "value": 200,
+          "type": "text",
+          "question": "This 1997 film starring Leonardo DiCaprio became the highest-grossing film of all time until 2009.",
+          "answer": "What is Titanic?"
+        },
+        {
+          "value": 400,
+          "type": "image",
+          "question": "Name this famous movie character.",
+          "media": "media/examples/movie_character.jpg",
+          "hintImage": "media/examples/movie_character_hint.jpg",
+          "answer": "Who is Darth Vader?",
+          "answerImage": "media/examples/movie_character_answer.jpg"
+        },
+        {
+          "value": 600,
+          "type": "text",
+          "question": "This director is known for films like Pulp Fiction and Kill Bill.",
+          "answer": "Who is Quentin Tarantino?"
+        },
+        {
+          "value": 800,
+          "type": "video",
+          "question": "Identify this movie from the clip.",
+          "media": "media/examples/movie_clip.mp4",
+          "answer": "What is The Matrix?"
+        },
+        {
+          "value": 1000,
+          "type": "text",
+          "question": "This 1994 film won the Academy Award for Best Picture and stars Tom Hanks.",
+          "answer": "What is Forrest Gump?"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "questions": [
+        {
+          "value": 200,
+          "type": "text",
+          "question": "This British band released the album 'Abbey Road' in 1969.",
+          "answer": "Who are The Beatles?"
+        },
+        {
+          "value": 400,
+          "type": "audio",
+          "question": "Name this famous song.",
+          "media": "media/examples/song.mp3",
+          "answer": "What is Bohemian Rhapsody?"
+        },
+        {
+          "value": 600,
+          "type": "text",
+          "question": "This musical note is represented by a filled-in oval with a stem.",
+          "answer": "What is a quarter note?"
+        },
+        {
+          "value": 800,
+          "type": "text",
+          "question": "This composer wrote 'The Four Seasons'.",
+          "answer": "Who is Antonio Vivaldi?"
+        },
+        {
+          "value": 1000,
+          "type": "audio",
+          "question": "Identify this classical piece.",
+          "media": "media/examples/classical.mp3",
+          "answer": "What is Beethoven's 5th Symphony?"
+        }
+      ]
+    },
+    {
+      "name": "Geography",
+      "questions": [
+        {
+          "value": 200,
+          "type": "text",
+          "question": "This is the capital of France.",
+          "answer": "What is Paris?"
+        },
+        {
+          "value": 400,
+          "type": "text",
+          "question": "This is the largest ocean on Earth.",
+          "answer": "What is the Pacific Ocean?"
+        },
+        {
+          "value": 600,
+          "type": "image",
+          "question": "Identify this landmark.",
+          "media": "media/examples/landmark.jpg",
+          "answer": "What is the Eiffel Tower?"
+        },
+        {
+          "value": 800,
+          "type": "text",
+          "question": "This is the longest river in the world.",
+          "answer": "What is the Nile River?"
+        },
+        {
+          "value": 1000,
+          "type": "text",
+          "question": "This country has the most natural lakes.",
+          "answer": "What is Canada?"
+        }
+      ]
+    }
+  ]
+}
