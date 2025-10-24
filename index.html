@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeopardy Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="game-title"></h1>
+      </header>
+
+      <div id="game-board" class="game-board">
+        <!-- Board will be dynamically generated -->
+      </div>
+
+      <!-- Question Modal -->
+      <div id="question-modal" class="modal">
+        <div class="modal-content">
+          <div class="question-value" id="question-value"></div>
+          <div class="question-text" id="question-text"></div>
+          <div class="media-container" id="media-container"></div>
+          <div class="modal-actions">
+            <button id="show-hint-btn" class="btn btn-hint" style="display: none;">
+              Show Hint
+            </button>
+            <button id="show-answer-btn" class="btn btn-primary">
+              Show Answer
+            </button>
+            <button id="close-modal-btn" class="btn btn-secondary">
+              Close
+            </button>
+          </div>
+          <div
+            class="answer-container"
+            id="answer-container"
+            style="display: none"
+          >
+            <div class="answer-label">Answer:</div>
+            <div class="answer-text" id="answer-text"></div>
+            <div class="answer-media-container" id="answer-media-container"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/game.js"></script>
+  </body>
+</html>
